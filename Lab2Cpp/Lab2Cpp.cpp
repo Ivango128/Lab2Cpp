@@ -3,14 +3,11 @@
 
 using namespace std;
 
-bool check_number() 
+bool check_number(int n) 
 {
     int second;
-    int n, first;
+    int first;
     bool prov = true;
-    cout << "First namber dont any small?\n";
-    cout << "Input count namber: ";
-    cin >> n;
     cout << "Input naber: ";
     cin >> first;
 
@@ -29,7 +26,13 @@ bool check_number()
 
 int main()
 {
-    if (check_number()) {
+    int n;
+    int i = 0;
+    cout << i, "Номер первой итерации";
+    cout << "First namber dont any small?\n";
+    cout << "Input count namber: ";
+    cin >> n;
+    if (check_number(n)) {
         cout << "No";
     }
     else {
